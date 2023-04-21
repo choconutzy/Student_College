@@ -1,7 +1,7 @@
 # Mahasiswa API
 This app build using gin, and MySQL
 ## Database Migrations
-Before run the migration, ensure that you have been created database in your local
+Before run the migration, ensure that you have been installed [golang-migrate cli](https://github.com/golang-migrate/migrate/blob/master/cmd/migrate/README.md) and created database in your local
 ```
 username:password@protocol(address)/dbname?param=value
 ```
