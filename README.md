@@ -19,9 +19,3 @@ migrate -path src/database/migration/ -database "mysql://username:password@tcp(l
 ```
 go run main.go
 ```
-
-## How to Run with nodemon
-
-```
-nodemon --exec go run main.go --signal SIGTERM
-```

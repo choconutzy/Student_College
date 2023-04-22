@@ -1,0 +1,53 @@
+@baseurl = http://localhost:8000
+@id = 9729ad0a-daa1-442b-88fc-553c2c34b360
+
+### Welcome
+GET {{baseurl}} HTTP/1.1
+content-type: application/json
+
+
+### GET ALL Majors
+GET {{baseurl}}/majors HTTP/1.1
+content-type: application/json
+
+### GET ALL Hobbies
+GET {{baseurl}}/hobbies HTTP/1.1
+content-type: application/json
+
+### GET ALL STUDENT
+GET {{baseurl}}/students HTTP/1.1
+content-type: application/json
+
+### GET STUDENT BY ID
+GET {{baseurl}}/student/{{id}} HTTP/1.1
+content-type: application/json
+
+### ADD A STUDENT
+POST {{baseurl}}/student HTTP/1.1
+content-type: application/json
+
+{
+    "fullname": "Sua",
+    "age": 18,
+    "gender": "1", 
+    "regist_date": "2022-11-08T08:00:00Z",
+    "major_id": "22abb427-e027-11ed-a141-e86cc772c998",
+    "hobby_id": ["22ac2e7f-e027-11ed-a141-e86cc772c998", "22ac3341-e027-11ed-a141-e86cc772c998"]
+}
+
+### UPDATE STUDENT BY ID
+PUT {{baseurl}}/student/fcc723fc-ef52-4c4b-8761-c078b30e91a1 HTTP/1.1
+content-type: application/json
+
+{
+    "fullname": "Sua",
+    "age": 19,
+    "gender": "1", 
+    "regist_date": "2022-11-08T08:00:00Z",
+    "major_id": "22abb427-e027-11ed-a141-e86cc772c998",
+    "hobby_id": ["22ac2e7f-e027-11ed-a141-e86cc772c998", "22ac3341-e027-11ed-a141-e86cc772c998"]
+}
+
+### DELETE CART BY PRODUCT_ID
+DELETE {{baseurl}}/student/fcc723fc-ef52-4c4b-8761-c078b30e91a1 HTTP/1.1
+content-type: application/json
