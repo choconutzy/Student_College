@@ -48,6 +48,6 @@ content-type: application/json
     "hobby_id": ["22ac2e7f-e027-11ed-a141-e86cc772c998", "22ac3341-e027-11ed-a141-e86cc772c998"]
 }
 
-### DELETE CART BY PRODUCT_ID
+### DELETE STUDENT BY ID
 DELETE {{baseurl}}/student/fcc723fc-ef52-4c4b-8761-c078b30e91a1 HTTP/1.1
 content-type: application/json
